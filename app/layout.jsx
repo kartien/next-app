@@ -9,9 +9,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="stylesheet" href="https://bootswatch.com/5/solar/bootstrap.min.css" />
+      </head>
       <body>
         <Navigation />
-        {children}
+        <div className='container p4'>{children}</div>
       </body>
     </html>
   )
